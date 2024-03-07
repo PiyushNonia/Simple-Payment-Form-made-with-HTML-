@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <!-- form name and on the top or the action button for it -->
+    <form action="">
+
+        <!-- write know we do not have any server to store the data of the
+    form that's why we dont use the form action button provide above -->
+
+        <h1>Payment Form
+        </h1>
+        <p>
+            Required field are followed with *
+        </p>
+        <!-- Here we are using the contact information of the user of the form-->
+        <h2> Contact information</h2>
+        <p>Name: <input type="text" name="name" required>
+        </p>
+        <!-- here we are using the gender collection information of the form-->
+        <fieldset>
+            <!--actully we use fielset to set a fiekd for the gender of the form-->
+            <legend>Gender</legend>
+            <!-- And then the in the field set we use the legend tag to name the
+    field for the gender -->
+            <p>
+                Male <input type="radio" name="gender" id="Male" required></p> Female <input type="radio" name="gender" id="Female" required></fieldset>
+        <!-- Here i have made the adres-->
+        <p>
+            Address: <textarea name="Address" id="Address" cols="80" rows="8"></textarea>
+        </p>
+        <!-- here i have written the email of the user and the user email will be requires-->
+        <p>
+            Email: <input type="Email" name="Email" id="Email" required> </p>
+        <p>
+            <!-- pincode tag i have used -->
+            Pincode: <input type="number" name="Pincode" id="pincode" required></p>
+        <hr>
+        <!-- hr tag for  the give a line in the form -->
+        <h1>
+            Payment Information
+        </h1>
+        <p>
+            <!-- here i have given the card type of the user to
+and given the card type option and given the value for the user to use it-->
+            Card Type: *
+            <select name="Master Card" id="card_type" required>
+                        <option value="">--Select Card Type</option>
+                        <option value="visa">Visa</option>
+                        <option value="Master card">Master Card</option>
+                        <option value="Rupay">Rupay</option>
+                        <option value="SBI card">SBI Card</option>
+                        <option value="HDFC card">HDFC card </option>
+                        </select>
+        </p>
+        <p>
+            Card Number * <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Experation Date * <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>
+            CVV * <input type="password" name="cvv" id="cvv" required> </p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+
+</html>
